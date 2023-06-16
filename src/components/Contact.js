@@ -3,7 +3,7 @@ import { BsFillGeoAltFill, BsFillTelephoneFill } from "react-icons/bs";
 import { MdEmail } from "react-icons/md";
 import ImageLayout from "./Resources/ImageLayout";
 import contactImg from "../images/contact__image.jpg"
-import contactBanner from "../images/contactBanner.jpg"
+import attrBanner from "../images/attraction_banner.jpg"
 import axios from 'axios'
 import 'react-toastify/dist/ReactToastify.css';
 import { ToastContainer, toast } from 'react-toastify';
@@ -28,14 +28,14 @@ const Contact = () => {
   return (
     <>
       <ImageLayout
-        imageUrl={contactBanner}
+        imageUrl={attrBanner}
         heading="CONTACT US"
       />
 
       <div className="container-fluid">
         <div className="row d-flex justify-content-center align-items-center">
           <ToastContainer position="bottom-left" autoClose={5000} hideProgressBar={false} newestOnTop={false} closeOnClick rtl={false} pauseOnFocusLoss draggable pauseOnHover theme="light" />
-          <div className="col-lg-6">
+          <div className="col-lg-6 mt-4">
             <div className="bg-light h-100 ms-2 ">
               <img
                 src={contactImg}
@@ -44,7 +44,7 @@ const Contact = () => {
               />
             </div>
           </div>
-          <div className="col-lg-6">
+          <div className="col-lg-6 mt-4">
             <div className="d-flex flex-column justify-content-center align-items-center h-100">
               <form className="bg-white pt-5" onSubmit={handleSubmit} autoComplete="off">
                 <div className="me-md-3 mb-3 mb-md-0">
