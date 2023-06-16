@@ -1,10 +1,9 @@
-import react from 'react'
 
 const ImageLayout = ({ imageUrl, heading }) => {
   return (
     <div className="position-relative">
       <img
-        className="d-block w-100"
+        className="d-block w-100 img-fluid"
         src={imageUrl}
         alt="Banner"
         style={{ height: "500px" }}

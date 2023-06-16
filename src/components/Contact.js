@@ -1,5 +1,4 @@
 import React from "react";
-import { Container, Row, Col, Image } from "bootstrap";
 import { BsFillGeoAltFill, BsFillTelephoneFill } from "react-icons/bs";
 import { MdEmail } from "react-icons/md";
 import ImageLayout from "./Resources/ImageLayout";
@@ -33,90 +32,91 @@ const Contact = () => {
         heading="CONTACT US"
       />
 
-      <div className="row d-flex justify-content-center align-items-center bg-light ">
-        <ToastContainer position="bottom-left" autoClose={5000} hideProgressBar={false} newestOnTop={false} closeOnClick rtl={false} pauseOnFocusLoss draggable pauseOnHover theme="light" />
-        <div className="col-lg-6 h-100 ">
-          <div className="bg-light h-100 ms-2 ">
-            <img
-              src={contactImg}
-              alt="your-image-description"
-              className="img-fluid"
-            />
+      <div className="container-fluid">
+        <div className="row d-flex justify-content-center align-items-center">
+          <ToastContainer position="bottom-left" autoClose={5000} hideProgressBar={false} newestOnTop={false} closeOnClick rtl={false} pauseOnFocusLoss draggable pauseOnHover theme="light" />
+          <div className="col-lg-6">
+            <div className="bg-light h-100 ms-2 ">
+              <img
+                src={contactImg}
+                alt="your-image-description"
+                className="img-fluid"
+              />
+            </div>
           </div>
-        </div>
-        <div className="col-lg-6 d-flex justify-content-center align-items-center h-100">
-          <div className="d-flex flex-column justify-content-center align-items-center h-100">
-            <form className="bg-white pt-5" onSubmit={handleSubmit} autoComplete="off">
-              <div className="me-md-3 mb-3 mb-md-0">
-                <div className="d-flex align-items-center mb-3">
-                  <BsFillGeoAltFill className="fs-5 " />
-                  <p className="m-1">
-                    At Post Khokurle, Kolhapur - <br /> Goa road, Taluka:
-                    Gaganbawda, District: Kolhapur. 416206
-                  </p>
-                </div>
-                <div className="d-flex align-items-center mb-3">
-                  <BsFillTelephoneFill className="fs-5" />
-                  <p className="m-1">+91 9422517750</p>
-                </div>
-                <div className="d-flex align-items-center">
-                  <MdEmail className="fs-5" />
-                  <p className="m-1">palmnestfarm@gmail.com</p>
-                </div>
-              </div>
-              <div className="mb-3 mt-5">
-                <div className="d-flex flex-column flex-md-row">
-                  <div className="me-md-3 mb-3 mb-md-0">
-                    <input type="text"
-                      className="form-control"
-                      id="name"
-                      name="name"
-                      placeholder="Your Name"
-                      required
-                    />
+          <div className="col-lg-6">
+            <div className="d-flex flex-column justify-content-center align-items-center h-100">
+              <form className="bg-white pt-5" onSubmit={handleSubmit} autoComplete="off">
+                <div className="me-md-3 mb-3 mb-md-0">
+                  <div className="d-flex align-items-center mb-3">
+                    <BsFillGeoAltFill className="fs-5 " />
+                    <p className="m-1">
+                      At Post Khokurle, Kolhapur - <br /> Goa road, Taluka:
+                      Gaganbawda, District: Kolhapur. 416206
+                    </p>
                   </div>
-                  <div className="ms-md-3">
-                    <input
-                      type="email"
-                      className="form-control"
-                      id="email"
-                      name="email"
-                      placeholder="Your Email"
-                      required
-                    />
+                  <div className="d-flex align-items-center mb-3">
+                    <BsFillTelephoneFill className="fs-5" />
+                    <p className="m-1">+91 9422517750</p>
+                  </div>
+                  <div className="d-flex align-items-center">
+                    <MdEmail className="fs-5" />
+                    <p className="m-1">palmnestfarm@gmail.com</p>
                   </div>
                 </div>
-              </div>
-              <div className="mb-3">
-                <input
-                  type="number"
-                  className="form-control"
-                  id="mobile"
-                  name="mobile"
-                  placeholder="Your Contact Number"
-                  required
-                />
-              </div>
-              <div className="mb-3">
-                <textarea
-                  className="form-control"
-                  id="message"
-                  name="message"
-                  rows="5"
-                  placeholder="Send Us Your Requirements.."
-                ></textarea>
-              </div>
-              <button
-                type="submit"
-                className="btn btn-primary w-100 bg-black text-white mb-2"
-              >
-                Submit
-              </button>
-            </form>
+                <div className="mb-3 mt-5">
+                  <div className="d-flex flex-column flex-md-row">
+                    <div className="me-md-3 mb-3 mb-md-0">
+                      <input type="text"
+                        className="form-control"
+                        id="name"
+                        name="name"
+                        placeholder="Your Name"
+                        required
+                      />
+                    </div>
+                    <div className="ms-md-3">
+                      <input
+                        type="email"
+                        className="form-control"
+                        id="email"
+                        name="email"
+                        placeholder="Your Email"
+                        required
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div className="mb-3">
+                  <input
+                    type="number"
+                    className="form-control"
+                    id="mobile"
+                    name="mobile"
+                    placeholder="Your Contact Number"
+                    required
+                  />
+                </div>
+                <div className="mb-3">
+                  <textarea
+                    className="form-control"
+                    id="message"
+                    name="message"
+                    rows="5"
+                    placeholder="Send Us Your Requirements.."
+                  ></textarea>
+                </div>
+                <button
+                  type="submit"
+                  className="btn btn-primary w-100 bg-black text-white mb-2"
+                >
+                  Submit
+                </button>
+              </form>
+            </div>
           </div>
         </div>
       </div>
-
 
       <div className="d-flex justify-content-center align-items-center ">
         <iframe width="100%" height="500" id="gmap_canvas" src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=The%20Palmnest%20farm,%20Kolhapur-Goa%20road,%20Taluka:%20Gaganbawda,%20Khokurle,%20Maharashtra%20416206%20Pune+()&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href='https://maps-generator.com/'>.</a>

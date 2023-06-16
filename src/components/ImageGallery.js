@@ -3,8 +3,6 @@ import { useParams } from "react-router-dom";
 
 const ImageGallery = () => {
   const { imageUrl } = useParams();
-
-  console.log(imageUrl)
   return (
     <div>
       <h1>Image Page</h1>

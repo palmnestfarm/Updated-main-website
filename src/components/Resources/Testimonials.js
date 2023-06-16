@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import "./Testimonials.css";
 import axios from 'axios';
+import ImageLayout from "../Resources/ImageLayout";
+import contactBanner from "../../images/contactBanner.jpg"
 const Testimonials = () => {
 
   const [testimonialData, setTestimonialData] = useState([]);
@@ -16,17 +18,7 @@ const Testimonials = () => {
   return (
     <>
       <div className="xyz">
-        <div className="position-relative">
-          <img
-            className="d-block w-100  img-fluid"
-            style={{ height: "450px" }}
-            src="https://static.wixstatic.com/media/4cebd5_0a489268552c4ab092ba25dac27db711~mv2.webp"
-            alt=""
-          />
-          <div className="position-absolute top-50 start-50 translate-middle">
-            <h1 className="text-white">TESTIMONIALS</h1>
-          </div>
-        </div>
+        <ImageLayout imageUrl={contactBanner} heading="Testimonials" />
 
         <section className="gallary">
           <div className="container-fluid position-relative">

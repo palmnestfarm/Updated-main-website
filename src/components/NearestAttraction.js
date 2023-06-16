@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import Card from "./Resources/Card";
+import React from "react";
 import "./NearestAttraction.css";
 import attrBanner from "../images/attraction_banner.jpg"
 import ramling from "../images/attraction/ramling.jpg"

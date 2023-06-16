@@ -1,5 +1,17 @@
 .navbar-toggler-icon {
     width: 18px !important;
     height: 18px !important;
+}
 
+.myNavs a {
+    text-decoration: none;
+    color: #707071;
+}
+
+.myNavs a:hover {
+    color: #4b4b53;
+}
+
+.myNavs a:active {
+    color: white;
 }
