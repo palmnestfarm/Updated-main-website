@@ -1,0 +1,15 @@
+/* .col {
+    height: 300px;
+    width: 300px;
+    margin: 30px auto 30px;
+} */
+
+.bb {
+    margin: 50px auto;
+    padding: 30px;
+    width: 350px;
+    height: 100%;
+    border: 30px solid;
+    border-image-source: url("https://e0.pxfuel.com/wallpapers/956/55/desktop-wallpaper-transparent-floral-frame-transparent-floral-frame-png-cliparts-on-clipart-library-vintage-flower-frame.jpg");
+    border-image-slice: 100;
+}
