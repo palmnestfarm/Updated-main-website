@@ -29,6 +29,7 @@ const Contact = () => {
     <>
       <ImageLayout
         imageUrl={attrBanner}
+      // heading="CONTACT US"
       />
 
       <div className="container-fluid">
