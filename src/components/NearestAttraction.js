@@ -20,12 +20,12 @@ const NearestAttraction = () => {
             src={attrBanner}
             alt=""
           />
-          <div className="position-absolute top-50 start-50 translate-middle">
-            <h2 className="text-white fs-1">Nearest Attraction</h2>
-          </div>
         </div>
 
         <div className="container">
+          <div className="row">
+            <h1 style={{ marginTop: "30px", textShadow: " 3px 3px grey", textAlign: "center" }}>Nearest Attraction</h1>
+          </div>
           <div className="row mt-5 g-4 d-flex justify-content-center">
             <div className="col-lg-4 col-sm-6 d-flex justify-content-center">
               <div class="card" style={{ width: "18rem" }}>

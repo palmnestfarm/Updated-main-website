@@ -1,21 +1,72 @@
 import React from 'react'
 import ImageLayout from "../Resources/ImageLayout";
 import royalCottage_banner from "../../images/royalCottage_banner.jpg"
-import Cottageoutdoor from "../../images/Cottageoutdoor.jpg"
+import Cottage1 from "../../images/New Images/Cottage Slider/cottage1.jpg"
+import Cottage2 from "../../images/New Images/Cottage Slider/cottage2.jpg"
+import Cottage3 from "../../images/New Images/Cottage Slider/cottage3.jpg"
+import Slider from "react-slick";
 const Cottages = () => {
+    var settings = {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        initialSlide: 0,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    initialSlide: 1
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
+    };
     return (
         <>
             <ImageLayout
                 imageUrl={royalCottage_banner}
-                heading="Luxurious Tents and Royal Cottages"
             />
             <div className="container-fluid">
+                <div className="row">
+                    <h1 style={{ marginTop: "30px", textShadow: " 3px 3px grey", textAlign: "center" }}>Royal Cottages</h1>
+                </div>
                 <div className="row d-flex justify-content-center">
                     <h4 className='text-center mt-5 mb-5 font-monospace fw-bold'> Immerse Yourself in Opulent Comfort Amidst Nature's Embrace..!</h4>
                 </div>
                 <div className="row d-flex justify-content-center mt-5">
                     <div className="col-lg-6">
-                        <img src={Cottageoutdoor} alt="" className='img-fluid' />
+                        <Slider {...settings}>
+                            <div>
+                                <img src={Cottage1} alt="img" className="img-fluid" />
+                            </div>
+                            <div>
+                                <img src={Cottage2} alt="img" className="img-fluid" />
+                            </div>
+                            <div>
+                                <img src={Cottage3} alt="img" className="img-fluid" />
+                            </div>
+                        </Slider>
                     </div>
                     <div className="col-lg-6">
                         <p style={{ textAlign: "justify", lineHeight: "32px", marginTop: "25px" }}>

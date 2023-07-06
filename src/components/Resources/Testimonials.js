@@ -18,10 +18,13 @@ const Testimonials = () => {
   return (
     <>
       <div className="xyz">
-        <ImageLayout imageUrl={contactBanner} heading="Testimonials" />
+        <ImageLayout imageUrl={contactBanner} />
 
         <section className="gallary">
           <div className="container-fluid position-relative">
+            <div className="row">
+              <h1 style={{ marginTop: "30px", textShadow: " 3px 3px grey", textAlign: "center" }}>Testimonials</h1>
+            </div>
             <div className="row g-4 mt-5">
               {
                 testimonialData?.map((val) => {

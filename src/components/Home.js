@@ -1,9 +1,13 @@
 import React, { useEffect, useState } from "react";
 import Typewriter from 'typewriter-effect';
-import aboutImg from "../images/about_us_img.webp"
-import pinkBanner from "../images/pinkBanner.webp"
+import aboutImg from "../images/New Images/homePage_aboutImg.jpg"
 import Carousel from 'react-bootstrap/Carousel';
+import Slider from "react-slick";
 import axios from "axios";
+import homeImg1 from "../images/New Images/Home Slider/homeSlider1.jpg"
+import homeImg2 from "../images/New Images/Home Slider/homeSlider2.jpg"
+import homeImg3 from "../images/New Images/Home Slider/homeSlider3.jpg"
+import homeImg4 from "../images/New Images/Home Slider/homeSlider4.jpg"
 const Home = () => {
   const [carouselData, setCarouselData] = useState([]);
   useEffect(() => {
@@ -14,6 +18,43 @@ const Home = () => {
     })
   }, [])
 
+  var settings = {
+    dots: true,
+    infinite: false,
+    speed: 500,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    initialSlide: 0,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    infinite: true,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
+  }
   return (
     <>
       <div className="container-fluid">
@@ -39,26 +80,26 @@ const Home = () => {
       </div>
 
       <div className="container">
-        <div className="text-center">
+        <div className="row">
           <div className="text-center mt-5">
-            <h1 class=" font-monospace text-secondary fs-1 lh-sm fw-light">
-              Welcome to The PalmNest Farm
-            </h1>
-            <Typewriter
+            <h6 className="fw-bold text-uppercase">
+              TRULY SECLUDED FROM THE REST OF THE WORLD
+            </h6>
+            <h1 className="fw-light mt-4" style={{ color: "#05828e" }}>LIKE NOWHERE ELSE</h1>
+            {/* <Typewriter
               options={{
                 strings: ['The Place where you would love to stay...!'],
                 autoStart: true,
                 loop: true,
+                fontSize: "10px"
               }}
-            />
+            /> */}
           </div>
         </div>
         <div className="row d-flex justify-content-center">
           <div className="col-lg-11">
-            <p className="mt-5 lh-lg font-monospace" style={{ textAlign: "justify", fontSize: "1.1rem" }}>
-              <b>The Palmnest Farm</b> provides a welcome escape from the urban world. Here
-              the serene beauty and laid back luxury farmstay converges to define an
-              enticing pleasure that beckon you back time after time.
+            <p className="mt-5 lh-lg mb-5" style={{ textAlign: "center", fontSize: "1.1rem" }}>
+              Secluded in the Western ghats of Maharashtra, Palmnest Resort is like nowhere else. A luxury resort of Gaganbawda, located in Khokurle Village, your all-inclusive stay will be the experience of a lifetime.
             </p>
           </div>
         </div>
@@ -69,13 +110,13 @@ const Home = () => {
             <img src={aboutImg} alt="Image" className="img-fluid" />
           </div>
           <div className="col-lg-6">
-            <p className="font-monospace mt-2" style={{ textAlign: "justify", fontSize: "17px", lineHeight: "35px" }}>
+            <p className="mt-2" style={{ textAlign: "center", fontSize: "17px", lineHeight: "35px" }}>
               Step into a world of serene beauty and indulgent farm stays at The PalmNest Farm.
               Nestled in the enchanting locale of Gaganbawda, a mere 45 km from the bustling city of
               Kolhapur, our resort offers a sanctuary of tranquility. Immerse yourself in the
               picturesque surroundings adorned with lush greenery, swaying sugarcane fields, and the
               gentle flow of the Kumbhi River. Whether you seek a rejuvenating family getaway, a
-              memorable gathering with friends, a productive team-building retreat, a romantic
+              memorable gathering with friends, a romantic
               honeymoon, or simply a place to unwind and reconnect with nature, The PalmNest Farm
               is the perfect destination.
             </p>
@@ -83,23 +124,35 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="position-relative mt-5">
-        <img
-          className="d-block w-100"
-          src={pinkBanner}
-          alt=""
-          style={{ height: "500px", width: "100%" }}
-        />
-        <div className="position-absolute top-50 start-50 translate-middle">
-          <div className="rounded-circle bg-white p-5 ">
-            <div className="text-center">
-              <p>CONTACT US</p>
-              <p>
-                At Post Khokurle, Kolhapur - Goa road,Taluka:
-                <div> Gaganbawda, District: Kolhapur. 416206</div>
-              </p>
-              <p>Phone No :+91 9422517750</p>
-            </div>
+      <div className="container w-100" style={{ marginTop: "120px", marginBottom: "80px" }}>
+        <div className="row">
+          <div className="col-lg-12">
+            <Slider {...settings}>
+              <div>
+                <img src={homeImg1} alt="" className="img-fluid" />
+              </div>
+              <div>
+                <img src={homeImg3} alt="" className="img-fluid" />
+              </div>
+              <div>
+                <img src={homeImg2} alt="" className="img-fluid" />
+              </div>
+              <div>
+                <img src={homeImg4} alt="" className="img-fluid" />
+              </div>
+              <div>
+                <img src={homeImg1} alt="" className="img-fluid" />
+              </div>
+              <div>
+                <img src={homeImg4} alt="" className="img-fluid" />
+              </div>
+              <div>
+                <img src={homeImg3} alt="" className="img-fluid" />
+              </div>
+              <div>
+                <img src={homeImg2} alt="" className="img-fluid" />
+              </div>
+            </Slider>
           </div>
         </div>
       </div>

@@ -27,16 +27,15 @@ const MyNav = () => {
                 <NavDropdown.Item className="myNavs"><Link to="/luxuryTents">Luxury Tents</Link></NavDropdown.Item>
                 <NavDropdown.Item className="myNavs"><Link to="/cottages">Royal Cottages</Link></NavDropdown.Item>
               </NavDropdown>
-
+              <Nav.Link className="myNavs"><Link to="/restaurant">Restaurant & Bar</Link></Nav.Link>
               <Nav.Link className="myNavs"><Link to="/Activities">Activities</Link></Nav.Link>
               <Nav.Link className="myNavs"><Link to="/nearest-attraction">Nearest Attraction</Link></Nav.Link>
 
-              <NavDropdown title="Resources" id="navbarScrollingDropdown">
+              <Nav.Link className="myNavs"><Link to="/testimonials"> Testimonials </Link></Nav.Link>
+              {/* <NavDropdown title="Resources" id="navbarScrollingDropdown">
                 <NavDropdown.Item className="myNavs"><Link to="/gallery">Gallery</Link></NavDropdown.Item>
                 <NavDropdown.Item className="myNavs"><Link to="/testimonials">Testimonials</Link></NavDropdown.Item>
-              </NavDropdown>
-
-              <Nav.Link className="myNavs"><Link to="/restaurant">Restaurant & Bar</Link></Nav.Link>
+              </NavDropdown> */}
               <Nav.Link className="myNavs"><Link to="/contact">Contact Us</Link></Nav.Link>
             </Nav>
           </Navbar.Collapse>

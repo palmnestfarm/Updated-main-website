@@ -29,10 +29,12 @@ const Contact = () => {
     <>
       <ImageLayout
         imageUrl={attrBanner}
-        heading="CONTACT US"
       />
 
       <div className="container-fluid">
+        <div className="row">
+          <h1 style={{ marginTop: "30px", textShadow: " 3px 3px grey", textAlign: "center" }}>Contact Us</h1>
+        </div>
         <div className="row d-flex justify-content-center align-items-center">
           <ToastContainer position="bottom-left" autoClose={5000} hideProgressBar={false} newestOnTop={false} closeOnClick rtl={false} pauseOnFocusLoss draggable pauseOnHover theme="light" />
           <div className="col-lg-6 mt-4">

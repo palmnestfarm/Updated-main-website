@@ -1,24 +1,71 @@
 import React from "react";
 import ImageLayout from "./Resources/ImageLayout";
 import barBanner from "../images/barBanner.jpg"
-import barInside from "../images/barInside.jpg"
+import bar1 from "../images/New Images/Bar Slider/bar1.jpg"
+import Slider from "react-slick";
 const Restaurant = () => {
-
+  var settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    initialSlide: 0,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          initialSlide: 1
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
+  };
   return (
     <>
       <ImageLayout
         imageUrl={barBanner}
-        heading="RESTAURANT & BAR"
       />
       <div className="container-fluid mt-4">
-
+        <div className="row">
+          <h1 style={{ marginTop: "30px", textShadow: " 3px 3px grey", textAlign: "center" }}>Restaurant & Bar</h1>
+        </div>
         <div className="row d-flex justify-content-center">
           <h4 className='text-center mt-5 mb-5 font-monospace fw-bold'> Indulge in Gastronomic Delights..!</h4>
         </div>
 
         <div className="row mt-4 d-flex justify-content-center">
           <div className="col-lg-6">
-            <img src={barInside} alt="img" className="img-fluid" />
+            <Slider {...settings}>
+              <div>
+                <img src={bar1} alt="img" className="img-fluid" />
+              </div>
+              <div>
+                <img src={bar1} alt="img" className="img-fluid" />
+              </div>
+              <div>
+                <img src={bar1} alt="img" className="img-fluid" />
+              </div>
+            </Slider>
           </div>
           <div className="col-lg-6">
             <p style={{ textAlign: "justify", lineHeight: "32px", marginTop: "35px" }}>
