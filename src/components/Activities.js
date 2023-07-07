@@ -76,21 +76,7 @@ const Activities = () => {
           <h1 style={{ marginTop: "30px", textShadow: " 3px 3px grey", textAlign: "center" }}>Activities At Palmnest Farm</h1>
         </div>
       </div>
-      <div className="container-fluid mt-4">
-        <div className="row d-flex justify-content-center">
-          {
-            activityData?.map((val, id) => {
-              return (
-                <div className="col-lg-4 col-sm-6">
-                  <span className="text-center"><center>{val.title}</center></span>
-                  <img className="img-fluid" src={val.image.url} alt="" />
-                </div>
-              )
-            })
-          }
-        </div>
-      </div>
-      <div className="container mb-4" style={{ marginTop: "160px" }}>
+      <div className="container mb-4" style={{ marginTop: "60px" }}>
         <div className="row">
           <Slider {...settings}>
             <div>
@@ -121,6 +107,20 @@ const Activities = () => {
               <img src={act10} alt="Image" className="img-fluid" />
             </div>
           </Slider>
+        </div>
+      </div>
+      <div className="container-fluid mt-4">
+        <div className="row d-flex justify-content-center">
+          {
+            activityData?.map((val, id) => {
+              return (
+                <div className="col-lg-4 col-sm-6 mt-5">
+                  <img className="img-fluid" src={val.image.url} alt="" />
+                  <span className="text-center"><center>{val.title}</center></span>
+                </div>
+              )
+            })
+          }
         </div>
       </div>
     </>

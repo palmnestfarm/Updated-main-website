@@ -3,7 +3,7 @@ import { BsFillGeoAltFill, BsFillTelephoneFill } from "react-icons/bs";
 import { MdEmail } from "react-icons/md";
 import ImageLayout from "./Resources/ImageLayout";
 import contactImg from "../images/contact__image.jpg"
-import attrBanner from "../images/attraction_banner.jpg"
+import attrBanner from "../images/New Images/ourStory.jpg"
 import axios from 'axios'
 import 'react-toastify/dist/ReactToastify.css';
 import { ToastContainer, toast } from 'react-toastify';
