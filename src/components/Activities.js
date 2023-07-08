@@ -114,9 +114,9 @@ const Activities = () => {
           {
             activityData?.map((val, id) => {
               return (
-                <div className="col-lg-4 col-sm-6 mt-5">
+                <div className="col-lg-3 col-sm-6 mt-5">
                   <img className="img-fluid" src={val.image.url} alt="" />
-                  <span className="text-center"><center>{val.title}</center></span>
+                  <h4 className="text-center mt-3">{val.title}</h4>
                 </div>
               )
             })

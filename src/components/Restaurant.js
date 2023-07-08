@@ -50,7 +50,7 @@ const Restaurant = () => {
           <h1 style={{ marginTop: "30px", textShadow: " 3px 3px grey", textAlign: "center" }}>Restaurant & Bar</h1>
         </div>
         <div className="row d-flex justify-content-center">
-          <h4 className='text-center mt-5 mb-5 font-monospace fw-bold'> Indulge in Gastronomic Delights..!</h4>
+          <h4 className='text-center mt-5 mb-5  fw-bold'> Indulge in Gastronomic Delights..!</h4>
         </div>
 
         <div className="row mt-4 d-flex justify-content-center">

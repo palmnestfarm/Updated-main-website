@@ -52,7 +52,7 @@ const Cottages = () => {
                     <h1 style={{ marginTop: "30px", textShadow: " 3px 3px grey", textAlign: "center" }}>Royal Cottages</h1>
                 </div>
                 <div className="row d-flex justify-content-center">
-                    <h4 className='text-center mt-5 mb-5 font-monospace fw-bold'> Immerse Yourself in Opulent Comfort Amidst Nature's Embrace..!</h4>
+                    <h4 className='text-center mt-5 mb-5 fw-bold'> Immerse Yourself in Opulent Comfort Amidst Nature's Embrace..!</h4>
                 </div>
                 <div className="row d-flex justify-content-center mt-5">
                     <div className="col-lg-6">
