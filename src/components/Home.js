@@ -18,63 +18,48 @@ const Home = () => {
   //   })
   // }, [])
 
-  // var settings = {
-  //   dots: true,
-  //   infinite: false,
-  //   speed: 500,
-  //   slidesToShow: 4,
-  //   slidesToScroll: 1,
-  //   initialSlide: 0,
-  //   autoplay: true,
-  //   autoplaySpeed: 2000,
-  //   infinite: true,
-  //   responsive: [
-  //     {
-  //       breakpoint: 1024,
-  //       settings: {
-  //         slidesToShow: 3,
-  //         slidesToScroll: 3,
-  //         infinite: true,
-  //         dots: true
-  //       }
-  //     },
-  //     {
-  //       breakpoint: 600,
-  //       settings: {
-  //         slidesToShow: 2,
-  //         slidesToScroll: 2,
-  //         initialSlide: 2
-  //       }
-  //     },
-  //     {
-  //       breakpoint: 480,
-  //       settings: {
-  //         slidesToShow: 1,
-  //         slidesToScroll: 1
-  //       }
-  //     }
-  //   ]
-  // }
+  var settings = {
+    dots: true,
+    infinite: false,
+    speed: 500,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    initialSlide: 0,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    infinite: true,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
+  }
   return (
     <>
       <div className="container-fluid">
         <div className="row">
           <div className="col-lg-12 col-sm-12 col-xs-12">
-            // <Carousel>
-            //   {
-            //     carouselData?.map((val) => {
-            //       return (
-            //         <Carousel.Item>
-            //           <img
-            //             className="d-block w-100 img-fluid"
-            //             src={val.image.url}
-            //             alt="Image"
-            //           />
-            //         </Carousel.Item>
-            //       )
-            //     })
-            //   }
-            // </Carousel>
             <video autoPlay loop muted playsInline width="100%">
               <source src="https://res.cloudinary.com/df7upghei/video/upload/v1689492731/TENT_01_WEBSITE_fn6g4g.mp4" />
             </video>
@@ -89,14 +74,6 @@ const Home = () => {
               TRULY SECLUDED FROM THE REST OF THE WORLD
             </h6>
             <h1 className="fw-light mt-4" style={{ color: "#05828e" }}>LIKE NOWHERE ELSE</h1>
-            {/* <Typewriter
-              options={{
-                strings: ['The Place where you would love to stay...!'],
-                autoStart: true,
-                loop: true,
-                fontSize: "10px"
-              }}
-            /> */}
           </div>
         </div>
         <div className="row d-flex justify-content-center">
