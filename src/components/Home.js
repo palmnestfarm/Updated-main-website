@@ -9,72 +9,75 @@ import homeImg2 from "../images/New Images/Home Slider/homeSlider2.jpg"
 import homeImg3 from "../images/New Images/Home Slider/homeSlider3.jpg"
 import homeImg4 from "../images/New Images/Home Slider/homeSlider4.jpg"
 const Home = () => {
-  const [carouselData, setCarouselData] = useState([]);
-  useEffect(() => {
-    axios.get("https://palmnest-backend-cjpi.vercel.app/home/gethomecarousel").then((res) => {
-      setCarouselData(res.data);
-    }).catch((err) => {
-      console.log(err)
-    })
-  }, [])
+  // const [carouselData, setCarouselData] = useState([]);
+  // useEffect(() => {
+  //   axios.get("https://palmnest-backend-cjpi.vercel.app/home/gethomecarousel").then((res) => {
+  //     setCarouselData(res.data);
+  //   }).catch((err) => {
+  //     console.log(err)
+  //   })
+  // }, [])
 
-  var settings = {
-    dots: true,
-    infinite: false,
-    speed: 500,
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    initialSlide: 0,
-    autoplay: true,
-    autoplaySpeed: 2000,
-    infinite: true,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
-          infinite: true,
-          dots: true
-        }
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
-          initialSlide: 2
-        }
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1
-        }
-      }
-    ]
-  }
+  // var settings = {
+  //   dots: true,
+  //   infinite: false,
+  //   speed: 500,
+  //   slidesToShow: 4,
+  //   slidesToScroll: 1,
+  //   initialSlide: 0,
+  //   autoplay: true,
+  //   autoplaySpeed: 2000,
+  //   infinite: true,
+  //   responsive: [
+  //     {
+  //       breakpoint: 1024,
+  //       settings: {
+  //         slidesToShow: 3,
+  //         slidesToScroll: 3,
+  //         infinite: true,
+  //         dots: true
+  //       }
+  //     },
+  //     {
+  //       breakpoint: 600,
+  //       settings: {
+  //         slidesToShow: 2,
+  //         slidesToScroll: 2,
+  //         initialSlide: 2
+  //       }
+  //     },
+  //     {
+  //       breakpoint: 480,
+  //       settings: {
+  //         slidesToShow: 1,
+  //         slidesToScroll: 1
+  //       }
+  //     }
+  //   ]
+  // }
   return (
     <>
       <div className="container-fluid">
         <div className="row">
           <div className="col-lg-12 col-sm-12 col-xs-12">
-            <Carousel>
-              {
-                carouselData?.map((val) => {
-                  return (
-                    <Carousel.Item>
-                      <img
-                        className="d-block w-100 img-fluid"
-                        src={val.image.url}
-                        alt="Image"
-                      />
-                    </Carousel.Item>
-                  )
-                })
-              }
-            </Carousel>
+            // <Carousel>
+            //   {
+            //     carouselData?.map((val) => {
+            //       return (
+            //         <Carousel.Item>
+            //           <img
+            //             className="d-block w-100 img-fluid"
+            //             src={val.image.url}
+            //             alt="Image"
+            //           />
+            //         </Carousel.Item>
+            //       )
+            //     })
+            //   }
+            // </Carousel>
+            <video autoPlay loop muted playsInline width="100%">
+              <source src="https://res.cloudinary.com/df7upghei/video/upload/v1689492731/TENT_01_WEBSITE_fn6g4g.mp4" />
+            </video>
           </div>
         </div>
       </div>
