@@ -17,8 +17,8 @@ const About = () => {
           </div> */}
           <div className="row">
             <div className="text-center mt-3">
-              <h6 className="fw-bold text-uppercase">
-                TRULY SECLUDED FROM THE REST OF THE WORLD
+              <h6 style={{ fontFamily: "headerFont", fontSize: "35px" }}>
+                Truly Secluded From The Rest Of The World
               </h6>
               <h1 className="fw-light mt-4" style={{ color: "#05828e" }}>LIKE NOWHERE ELSE</h1>
             </div>

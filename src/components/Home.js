@@ -59,21 +59,6 @@ const Home = () => {
       <div className="container-fluid">
         <div className="row">
           <div className="col-lg-12 col-sm-12 col-xs-12">
-            {/* <Carousel>
-              {
-                carouselData?.map((val) => {
-                  return (
-                    <Carousel.Item>
-                      <img
-                        className="d-block w-100 img-fluid"
-                        src={val.image.url}
-                        alt="Image"
-                      />
-                    </Carousel.Item>
-                  )
-                })
-              }
-            </Carousel> */}
             <video autoPlay loop muted playsInline width="100%">
               <source src="https://res.cloudinary.com/df7upghei/video/upload/v1689492731/TENT_01_WEBSITE_fn6g4g.mp4" type="video/mp4" />
             </video>
