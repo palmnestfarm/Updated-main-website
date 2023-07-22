@@ -47,10 +47,10 @@ const Restaurant = () => {
       />
       <div className="container-fluid mt-4">
         <div className="row">
-          <h1 style={{ marginTop: "30px", textShadow: " 3px 3px grey", textAlign: "center" }}>Restaurant & Bar</h1>
+          <h1 style={{ marginTop: "30px", textAlign: "center" }}>Restaurant & Bar</h1>
         </div>
         <div className="row d-flex justify-content-center">
-          <h4 className='text-center mt-5 mb-5  fw-bold'> Indulge in Gastronomic Delights..!</h4>
+          <h4 className='text-center mt-4 mb-5' style={{ fontFamily: "headerFont", fontSize: "35px" }}> Indulge in Gastronomic Delights</h4>
         </div>
 
         <div className="row mt-4 d-flex justify-content-center">

@@ -4,7 +4,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import "./MyNav.css";
-import palmnestLogo from "../images/palmnest_logo.webp"
+import palmnestLogo from "../images/palmnest_logo.png"
 import { Link } from "react-router-dom";
 
 const MyNav = () => {

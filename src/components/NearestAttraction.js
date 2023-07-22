@@ -24,7 +24,7 @@ const NearestAttraction = () => {
 
         <div className="container">
           <div className="row">
-            <h1 style={{ marginTop: "30px", textShadow: " 3px 3px grey", textAlign: "center" }}>Nearest Attraction</h1>
+            <h1 style={{ marginTop: "30px", textAlign: "center" }}>Nearest Attraction</h1>
           </div>
           <div className="row mt-5 g-4 d-flex justify-content-center">
             <div className="col-lg-4 col-sm-6 d-flex justify-content-center">

@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import Typewriter from 'typewriter-effect';
 import aboutImg from "../images/New Images/homePage_aboutImg.jpg"
 import Carousel from 'react-bootstrap/Carousel';
 import Slider from "react-slick";
@@ -9,14 +8,14 @@ import homeImg2 from "../images/New Images/Home Slider/homeSlider2.jpg"
 import homeImg3 from "../images/New Images/Home Slider/homeSlider3.jpg"
 import homeImg4 from "../images/New Images/Home Slider/homeSlider4.jpg"
 const Home = () => {
-  const [carouselData, setCarouselData] = useState([]);
-  useEffect(() => {
-    axios.get("https://palmnest-backend-cjpi.vercel.app/home/gethomecarousel").then((res) => {
-      setCarouselData(res.data);
-    }).catch((err) => {
-      console.log(err)
-    })
-  }, [])
+  // const [carouselData, setCarouselData] = useState([]);
+  // useEffect(() => {
+  //   axios.get("https://palmnest-backend-cjpi.vercel.app/home/gethomecarousel").then((res) => {
+  //     setCarouselData(res.data);
+  //   }).catch((err) => {
+  //     console.log(err)
+  //   })
+  // }, [])
 
   var settings = {
     dots: true,
@@ -60,7 +59,7 @@ const Home = () => {
       <div className="container-fluid">
         <div className="row">
           <div className="col-lg-12 col-sm-12 col-xs-12">
-            <Carousel>
+            {/* <Carousel>
               {
                 carouselData?.map((val) => {
                   return (
@@ -74,7 +73,10 @@ const Home = () => {
                   )
                 })
               }
-            </Carousel>
+            </Carousel> */}
+            <video autoPlay loop muted playsInline width="100%">
+              <source src="https://res.cloudinary.com/df7upghei/video/upload/v1689492731/TENT_01_WEBSITE_fn6g4g.mp4" type="video/mp4" />
+            </video>
           </div>
         </div>
       </div>
@@ -82,18 +84,10 @@ const Home = () => {
       <div className="container">
         <div className="row">
           <div className="text-center mt-5">
-            <h6 className="fw-bold text-uppercase">
-              TRULY SECLUDED FROM THE REST OF THE WORLD
+            <h6 className="" style={{ fontFamily: "headerFont", fontSize: "35px" }}>
+              Truly Secluded From The Rest Of The World
             </h6>
             <h1 className="fw-light mt-4" style={{ color: "#05828e" }}>LIKE NOWHERE ELSE</h1>
-            {/* <Typewriter
-              options={{
-                strings: ['The Place where you would love to stay...!'],
-                autoStart: true,
-                loop: true,
-                fontSize: "10px"
-              }}
-            /> */}
           </div>
         </div>
         <div className="row d-flex justify-content-center">
@@ -110,14 +104,14 @@ const Home = () => {
             <img src={aboutImg} alt="Image" className="img-fluid" />
           </div>
           <div className="col-lg-6">
-            <p className="mt-2" style={{ textAlign: "center", fontSize: "17px", lineHeight: "35px" }}>
-              Step into a world of serene beauty and indulgent farm stays at The PalmNest Farm.
+            <p className="mt-2" style={{ textAlign: "justify", fontSize: "17px", lineHeight: "35px" }}>
+              Step into a world of serene beauty and indulgent farm stays at The PalmNest Resort.
               Nestled in the enchanting locale of Gaganbawda, a mere 45 km from the bustling city of
               Kolhapur, our resort offers a sanctuary of tranquility. Immerse yourself in the
               picturesque surroundings adorned with lush greenery, swaying sugarcane fields, and the
               gentle flow of the Kumbhi River. Whether you seek a rejuvenating family getaway, a
               memorable gathering with friends, a romantic
-              honeymoon, or simply a place to unwind and reconnect with nature, The PalmNest Farm
+              honeymoon, or simply a place to unwind and reconnect with nature, The PalmNest Resort
               is the perfect destination.
             </p>
           </div>

@@ -23,8 +23,8 @@ const About = () => {
               <h1 className="fw-light mt-4" style={{ color: "#05828e" }}>LIKE NOWHERE ELSE</h1>
             </div>
           </div>
-          <p className="mt-5 lh-lg" style={{ fontSize: "18px", textAlign: "center" }}>
-            Escape to Tranquil Luxury at The PalmNest Farm Step into a world of serene beauty and indulgent farm stays at The PalmNest Farm. Nestled in the enchanting locale of Gaganbawda, a mere 45 km from the bustling city of Kolhapur, our resort offers a sanctuary of tranquility. Immerse yourself in the picturesque surroundings adorned with lush greenery, swaying sugarcane fields, and the gentle flow of the Kumbhi River. Whether you seek a rejuvenating family getaway, a memorable gathering with friends, a productive team-building retreat, a romantic honeymoon, or simply a place to unwind and reconnect with nature, The PalmNest Farm is the perfect destination.
+          <p className="mt-5 lh-lg" style={{ fontSize: "18px", textAlign: "justify" }}>
+            Escape to Tranquil Luxury at <b>The PalmNest Resort</b> Step into a world of serene beauty and indulgent farm stays at The PalmNest Resort. Nestled in the enchanting locale of Gaganbawda, a mere 45 km from the bustling city of Kolhapur, our resort offers a sanctuary of tranquility. Immerse yourself in the picturesque surroundings adorned with lush greenery, swaying sugarcane fields, and the gentle flow of the Kumbhi River. Whether you seek a rejuvenating family getaway, a memorable gathering with friends, a productive team-building retreat, a romantic honeymoon, or simply a place to unwind and reconnect with nature, The PalmNest Resort is the perfect destination.
           </p>
         </div>
 

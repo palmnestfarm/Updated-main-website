@@ -73,7 +73,7 @@ const Activities = () => {
 
       <div className="container">
         <div className="row">
-          <h1 style={{ marginTop: "30px", textShadow: " 3px 3px grey", textAlign: "center" }}>Activities At Palmnest Farm</h1>
+          <h1 style={{ marginTop: "30px", textAlign: "center" }}>Activities At Palmnest Resort</h1>
         </div>
       </div>
       <div className="container mb-4" style={{ marginTop: "60px" }}>
