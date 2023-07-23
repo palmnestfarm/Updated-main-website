@@ -65,10 +65,19 @@ const Activities = () => {
 
   return (
     <>
-      <div className="container-fluid p-0">
+      {/* <div className="container-fluid p-0">
         <ImageLayout
           imageUrl={activityBanner}
         />
+      </div> */}
+      <div className="container-fluid">
+        <div className="row">
+          <div className="col-lg-12 col-sm-12 col-xs-12">
+            <video autoPlay loop muted playsInline width="100%">
+              <source src="https://res.cloudinary.com/dluslcltw/video/upload/v1690106394/Activities_czapoz.mp4" />
+            </video>
+          </div>
+        </div>
       </div>
 
       <div className="container">
