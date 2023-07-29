@@ -49,7 +49,7 @@ const Cottages = () => {
             />
             <div className="container-fluid">
                 <div className="row">
-                    <h1 style={{ marginTop: "30px", textAlign: "center" }}>Royal Cottages</h1>
+                    <h1 style={{ marginTop: "30px", textAlign: "center", fontFamily: "tentFont" }} className='text-uppercase'>Royal Cottages</h1>
                 </div>
                 <div className="row d-flex justify-content-center">
                     <h4 className='text-center mt-4 mb-5' style={{ fontFamily: "headerFont", fontSize: "35px" }}> Immerse Yourself in Opulent Comfort Amidst Nature's Embrace</h4>

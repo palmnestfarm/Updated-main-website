@@ -23,7 +23,7 @@ const Testimonials = () => {
         <section className="gallary">
           <div className="container-fluid position-relative">
             <div className="row">
-              <h1 style={{ marginTop: "30px", textAlign: "center" }}>Testimonials</h1>
+              <h1 style={{ marginTop: "30px", textAlign: "center", fontFamily: "tentFont" }} className="text-uppercase">Testimonials</h1>
             </div>
             <div className="row d-flex justify-content-center">
               <h4 className='text-center mt-4 mb-5' style={{ fontFamily: "headerFont", fontSize: "35px" }}> What our customers says..?</h4>

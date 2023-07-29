@@ -10,3 +10,8 @@ body {
   font-family: headerFont;
   src: url("./fonts/Cookie-Regular.ttf");
 }
+
+@font-face {
+  font-family: tentFont;
+  src: url("./fonts/YsabeauSC-VariableFont_wght.ttf");
+}

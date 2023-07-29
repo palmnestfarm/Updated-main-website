@@ -34,7 +34,7 @@ const Contact = () => {
 
       <div className="container-fluid">
         <div className="row">
-          <h1 style={{ marginTop: "30px", textAlign: "center" }}>Contact Us</h1>
+          <h1 style={{ marginTop: "30px", textAlign: "center", fontFamily: "tentFont" }} className="text-uppercase">Contact Us</h1>
         </div>
         <div className="row d-flex justify-content-center align-items-center">
           <ToastContainer position="bottom-left" autoClose={5000} hideProgressBar={false} newestOnTop={false} closeOnClick rtl={false} pauseOnFocusLoss draggable pauseOnHover theme="light" />

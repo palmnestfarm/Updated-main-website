@@ -50,7 +50,7 @@ const Tents = () => {
 
             <div className="container-fluid mt-4">
                 <div className="row">
-                    <h1 style={{ marginTop: "20px", textAlign: "center" }}>Luxurious Tents </h1>
+                    <h1 style={{ marginTop: "20px", textAlign: "center", fontFamily: "tentFont", }} className='text-uppercase'>Luxurious Tents </h1>
                 </div>
                 <div className="row d-flex justify-content-center">
                     <h4 className='text-center mt-4 mb-5' style={{ fontFamily: "headerFont", fontSize: "35px" }}> Immerse Yourself in Opulent Comfort Amidst Nature's Embrace</h4>
