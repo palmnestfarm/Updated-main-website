@@ -90,14 +90,14 @@ const Home = () => {
           </div>
           <div className="col-lg-6">
             <p className="mt-2" style={{ textAlign: "justify", fontSize: "17px", lineHeight: "35px" }}>
-              Step into a world of serene beauty and indulgent farm stays at The PalmNest Resort.
+              Step into a world of serene beauty and indulgent farm stays at The PalmNest Resort, Kolhapur.
               Nestled in the enchanting locale of Gaganbawda, a mere 45 km from the bustling city of
               Kolhapur, our resort offers a sanctuary of tranquility. Immerse yourself in the
               picturesque surroundings adorned with lush greenery, swaying sugarcane fields, and the
               gentle flow of the Kumbhi River. Whether you seek a rejuvenating family getaway, a
               memorable gathering with friends, a romantic
               honeymoon, or simply a place to unwind and reconnect with nature, The PalmNest Resort
-              is the perfect destination.
+              is the perfect destination near by kolhapur city.
             </p>
           </div>
         </div>
