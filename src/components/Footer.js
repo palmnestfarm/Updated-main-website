@@ -15,7 +15,7 @@ const Footer = () => {
           <div className="col-lg-4 mt-4">
             <h5 className="fw-bold">FIND US AT</h5>
             <p className="mt-4"><b>Address: </b> At Post Khokurle, Kolhapur - Goa road, <br /> Taluka: Gaganbawda, District: Kolhapur. 416206</p>
-            <p><b>Phone No:</b> +91  9422517750</p>
+            <p><b>Phone No:</b> +91  9422518816 & +91 9422517750</p>
             <p><b>Email ID:</b> palmnestfarm@gmail.com</p>
             <p className="mt-4 mb-5">
               <Link to="https://www.instagram.com/the_palmnest_farm/" target="_blank">
